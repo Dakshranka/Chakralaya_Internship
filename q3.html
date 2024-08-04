@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Types Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="n">Daksh Ranka</header>
+    <header class="r">22BRS1302</header>
+    <header class="d">Frontend</header>
+    <nav>
+        <h1>Blood Types Visualization</h1>
+    </nav>
+    <div class="filters">
+        <label for="typeFilter">Filter by Type:</label>
+        <select id="typeFilter">
+            <option value="all">All</option>
+        </select>
+        <label for="groupFilter">Filter by Group:</label>
+        <select id="groupFilter">
+            <option value="all">All</option>
+        </select>
+    </div>
+    <div class="charts">
+        <canvas id="typeChart"></canvas>
+        <canvas id="groupChart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
